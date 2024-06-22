@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software de Inventario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inventario de Productos</h1>
+        <form id="productForm">
+            <input type="text" id="productName" placeholder="Nombre del producto" required>
+            <input type="number" id="productQuantity" placeholder="Cantidad" required>
+            <button type="submit">Agregar Producto</button>
+        </form>
+        <table id="inventoryTable">
+            <thead>
+                <tr>
+                    <th>Nombre del Producto</th>
+                    <th>Cantidad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="inventoryBody">
+                <!-- Los productos se añadirán aquí -->
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
